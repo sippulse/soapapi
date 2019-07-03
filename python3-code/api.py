@@ -9,7 +9,7 @@ from requests.auth import HTTPBasicAuth
 from zeep.transports import Transport
 
 session = Session()
-session.auth = HTTPBasicAuth('integracao', '#integracao#')
+session.auth = HTTPBasicAuth(' ', ' ')
 addressWsdl = "http://189.90.58.142:8080/SipPulse/AddressWS?wsdl"
 transport = Transport(session=session)
 
@@ -43,4 +43,4 @@ def insertAddress(accountcode, domain, ipAddress, mask, method, port, protocol, 
     #response = client.service.sendData(**address)
     response = client.service.insertAddress(**address)
 
-insertAddress('eliakim@189.90.58.141', '189.90.58.141', '189.90.58.138', '32' 'techprefix','5060', 'udp','eliakim','9197','integracao','#integracao#')
+insertAddress('eliakim@189.90.58.141', '189.90.58.141', '189.90.58.138', '32' 'techprefix','5060', 'udp','eliakim','9197',' ',' ')

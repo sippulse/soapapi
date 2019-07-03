@@ -11,7 +11,7 @@ from zeep import xsd
 
 session = Session()
 #Usuário e Senha da Integracao
-session.auth = HTTPBasicAuth('Integracao', '#Integracao#')
+session.auth = HTTPBasicAuth('', 'Senha')
 subscriberWsdl = "http://189.90.58.142:8080/SipPulse/SubscriberWS?wsdl"
 transport = Transport(session=session)
 
@@ -53,8 +53,8 @@ def insertSubscriber():
         }],
         #Usuário e Senha da Integracao
         'principal' : [{
-            'login': 'Integracao',
-            'password': '#Integracao#',
+            'login': ' ',
+            'password': ' ',
         }]
     } 
    
