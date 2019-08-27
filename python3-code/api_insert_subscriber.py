@@ -58,6 +58,7 @@ def insertSubscriber():
         }]
     } 
    
+    # insertSubscriber - Serviço do WSDL
     response = client.create_message(client.service, "insertSubscriber", **subscriber)
 
 
